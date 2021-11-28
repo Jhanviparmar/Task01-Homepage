@@ -8,10 +8,10 @@ body{
 #padding{
   padding: 0px 300px;
 }
-/*landingpage*/
+/*----------------------landingpage--------------------*/
 .landingpage{
   background-image: url('images/back.png');
-  height: 800px;
+  height: 900px;
   overflow: auto;
 }
 
@@ -24,17 +24,34 @@ body{
   padding: 12px 0px 0px 18px;
 }
 
-.landingpage .nav{
-  padding-top: 25px;
-  margin-left: 260px;
+nav{
+  margin-left: 200px;
+  display: flex;
+  margin-top: 30px;
 }
 
-.landingpage .nav ul li{
+nav ul li{
   display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a{
   text-decoration: none;
-  margin-right: 25px;
-  color: #ffffff;
-  font-size: 15px;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  margin-top: 5px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
 }
 
 .landingpage .border{
@@ -42,6 +59,14 @@ body{
   border-radius: 20px;
   padding: 8px 12px;
 }
+/*.search_categories{
+  font-size: 13px;
+  padding: 10px 8px 10px 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  position: relative;
+}*/
 
 .landingpage .mid{
   padding: 80px 0px 0px 60px;
@@ -67,11 +92,17 @@ body{
 .landingpage .centerbtn a{
   text-decoration: none;
   color: #ffffff;
+}
+
+.landingpage .centerbtn{
   border: 1px solid white;
   border-radius: 20px;
   background-color: #006072;
+  opacity: 0.9;
   padding: 9px 17px;
-  margin-left: 550px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
   font-size: 15px;
 }
 
@@ -101,7 +132,7 @@ body{
   right: 407px;
 }
 
-/*why*/
+/*-----------------why-----------------*/
 .why{
   overflow: auto;
   margin-bottom: 40px;
@@ -150,7 +181,7 @@ body{
 }
 
 
-/*cube*/
+/*------------------cube-------------------*/
 #cube{
   overflow: auto;
 }
@@ -256,7 +287,7 @@ body{
   font-weight: normal;
 }
 
-/*customer*/
+/*-------------------customer----------------*/
 .customer{
   background-color: #f4f5f8;
 }
@@ -454,25 +485,25 @@ body{
   display: none;
 }
 
-/*responsive*/
+/*-----------------------responsive--------------------------------*/
 
 @media only screen and (max-width : 1024px){
-  .landingpage .nav {
-    margin-left: 20px;
+  nav {
+    margin-left: 0px;
 }
 
 .landingpage .nav ul li {
-    margin-right: 15px;
-    font-size: 14px;
+    margin-right: 5px;
+    font-size: 10px;
 }
 .landingpage .centerbtn a {
 
-    margin-left: 400px;
+    margin-left: 0px;
   }
 
   .landingpage .bottom {
     padding: 130px 0px 30px 120px;
-}
+  }
 
   .why{
     padding: 0px 40px;
@@ -514,47 +545,68 @@ body{
  .cube .cube1 {
   position: absolute;
     left: 700px;
-}
-.cube2{
+ }
+
+ .cube2{
   left: 845px;
-}
-.cube3{
+ }
+
+ .cube3{
   left: 850px;
-}
-.news .up {
+ }
+
+  .news .up {
     margin: 25px 300px 25px 0px;
-}
-.newsletter #submitbtn{
+ }
+
+ .newsletter #submitbtn{
   margin-top: 20px;
-}
-.news .query {
+ }
+
+ .news .query {
     margin: 25px 40px 25px 300px;
 
 }
 
-/*responsive tabletscreen*/
 
 @media only screen and (max-width : 768px){
-
+  nav ul li a{
+    font-size: 11px;
+    padding: 2px;
+  }
+  .landingpage .border {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 1px 10px;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 3px;
+  }
+  
   .landingpage .centerbtn a {
-    margin-left: 250px;
-}
+    margin-left: 0px;
+  }
+
   .landingpage .bottom {
     padding: 100px 40px 30px 40px;
-}
-.last .ellipse {
+  }
+
+  .last .ellipse {
     right: 350px;
-}
-.last .earrow {
+  }
+
+  .last .earrow {
     right: 363px;
-}
+  }
 
   .cube .cube1 {
   position: absolute;
   top: 1480px;
-    left: 500px;
-}
-.cube2{
+  left: 500px;
+ }
+
+ .cube2{
   top: 1415px;
   left: 645px;
 }
@@ -562,14 +614,17 @@ body{
   top: 1525px;
   left: 650px;
 }
-  .box{
-    height: 360px;
-  }
-  .msg {
+
+.box{
+    height: 400px;
+}
+
+.msg {
     position: absolute;
     top: 3px;
     left: 160px;
 }
+
 .box h3 {
     position: absolute;
     font-size: 18px;
@@ -601,21 +656,70 @@ body{
 }
 
 
-/*responsive mobilescreen*/
-
 @media only screen and (max-width : 500px){
+  .checkbtn{
+    display: block;
+  }
+   nav ul{
+    position: fixed;
+    width: 50%;
+    background: #525252;
+    top: 80px;
+    left: -110%;
+    text-align: right;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    border: 1px solid white;
+    border-radius: 0px !important;
+    padding: 7px 20px;
+  }
+  .landingpage .border{
+  padding: 7px 20px;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  .checkbtn{
+    margin-left: 100px;
+  }
+
   .landingpage .mid {
     padding: 80px 0px 0px 30px;
-}
-.landingpage .centerbtn a {
+  }
+
+  .landingpage .centerbtn {
     margin-left: 0px;
-    }
-.arrow{
+    margin-right: 30px;
+  }
+
+  .landingpage .centerbtn a {
+    margin-left: 40px;
+  }
+
+  .landingpage .bottom {
+    padding: 100px 40px 30px 30px;
+  }
+
+   .last .ellipse {
+  right: 140px;
+  }
+
+  .last .earrow {
+    right: 152px;
+  }
+
+  .arrow{
   display: none;
-}
-.bottom img,p{
+  }
+
+  .bottom img,p{
   margin : 0px 15px;
-}
+  }
+
 .s33 {
     width: 100%;
  }
@@ -628,82 +732,45 @@ body{
     width: 100%;
     margin-bottom: 20px;
   }
+  .msg {
+      top: 10px;
+    left: 215px;
+}
+.box .city {
+    position: absolute;
+    top: 65px;
+    left: 73px;
+    }
+
+    .a{
+      top: 120px;
+    }
   .news{
     display: block;
   }
   .news .up {
     margin: 25px 300px 25px 0px;
-}
-.news .query {
-    margin: 25px 40px 25px 0px;
-}
-.logoo {
+    padding: 23px 40px 11px 19px;
+ }
+ .news .query {
+    margin: 30px 40px 30px 0px;
+ }
+ .logoo {
     margin-right: 0px;
-}
+ }
 .links ul li {
     display: block;
-   }
-   .social {
-    margin-left: 50px;
-}
-.lastfooter {
+    text-decoration: none;
+   } 
+    
+  .social {
+    margin-left: 0px;
+  }
+  .lastfooter {
     padding: 0px;
     display: flex;
 } 
-#ok {
-    padding: 11px 30px;
+  #ok {
+    padding: 11px 20px;
 }
 }
-
-/*mobilemenu*/
-
-#nav ul .cross, #menu{
-  display: none;
-}
-
-@media only screen and (max-width : 500px){
-  .landingpage .nav {
-    margin-left: 20px;
-    position: absolute;
-    top: 0px;
-    width: 350px;
-}
-
-.last .ellipse {
-    right: 160px;
-}
-.last .earrow {
-    right: 172px;
-}
-.landingpage .nav ul li {
-    display: block;
-    margin-left: 150px;
-    border: 1px solid white;
-    text-align: center;
-    padding: 4px;
-    background-color: #4f4f4f;
-  }
-
-  .nav .border , .normalborder{
-    border-radius: 0px;
-  }
-
-  #cross{
-    text-align: right;
-  }
-
-  #nav{
-    right: -350px;
-  }
-
-  #menu{
-    padding: 20px 0px 0px 120px;
-  }
-
-  #nav ul .cross, #menu{
-  display: show;
-}
-}
-
-
-
