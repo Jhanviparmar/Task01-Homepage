@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
 	<title>Homepage</title>
 </head>
 <body>
@@ -15,24 +17,33 @@
 		<div class="landingpage">
 			<div class="top">
 				<div class="logo"><img src="images/homelogo.png"></div>
-				<nav class="nav" id="nav">
-					<ul>
-						<li id="cross"><a href="javascript:void(0)" onclick="closemenu()"><img src="images/cross.png"></a></li>
-						<!--<li class="cross"><a href="javascript:void(0)" onclick="closemenu()"><img src="images/cross.png"></a></li>-->
-						<a href=""><li class="border">Book a Cleaner</li></a>
-						<a href=""><li>Prices</li></a>
-						<a href=""><li>Our Guarantee</li></a>
-						<a href=""><li>Blog</li></a>
-						<a href=""><li>Contact Us</li></a>
-						<a href=""><li class="border">Login</li></a>
-						<a href=""><li class="border">Become a Helper</li></a>
-						<!--<div class="flag1"><li><i class="flag"><img src="images/flag.png"></i>
-    		                <i class="down"><img src="images/downarrow.png"></i>
-    		            </li></div>-->
+				<nav>
+      			<input type="checkbox" id="check">
+      			<label for="check" class="checkbtn">
+        		<i class="fas fa-bars"></i>
+      			</label>
+      				<ul>
+						<li class="border"><a href="">Book a Cleaner</a></li>
+						<li><a href="">Prices</a></li>
+						<li><a href="">Our Guarantee</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li class="border"><a href="">Login</a></li>
+						<li class="border"><a href="">Become a Helper<a></li>
 					</ul>
-				</nav>
-				<div id="menu" onclick="openmenu()"><img src="images/menu.png"></div>
-				<!--<div id="menu" onclick="openmenu()"><img src="images/menu.png"></div>-->
+                </nav>
+                
+				<!--<div class="search_categories">
+    <div class="select">
+       <select name="search_categories" id="search_categories">
+          <option value="1" selected="selected"><a href=""><img src="images/flag.png"></a></option>
+          <option value="2"><img src="images/india.png"></option>
+          <option value="3">Nice Solution</option>
+          <option value="4">Awesome</option>
+        </select>
+     </div>
+ </div>-->
+
 			</div>
 			<div class="mid">
 				<div class="lefttext">
@@ -65,7 +76,7 @@
 					<img src="images/h4.png">
 					<p class="text">Enjoy amazing service</p>
 				</div>
-				<<div class="last">
+				<div class="last">
 				<i class="ellipse"><img src="images/ellipse.png"></i>
 				<i class="earrow"><img src="images/earrow.png"></i>
 			    </div>
@@ -163,7 +174,7 @@
 				<div class="custimg"><img src="images/c1.png"></div>
 				<h3>Lary Watson</h3>
 				<p class="city">Manchester</p></div>
-				<div class="a"><p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet consequat. Praesent nec malesuada nibh.<br><br> Nullam et metus congue, auctor augue sit amet, consectetur tortor.</p>
+				<div class="a"><p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet consequat. Praesent nec malesuada nibh.<br><br> Nullam et metus congue, auctor augue sit amet, consectetur tortor.</p><br>
 				<p class="read"><a href="">Read More</a><span><img src=""></span></p></div>
 			</div>
 
@@ -172,7 +183,7 @@
 				<div class="custimg"><img src="images/c2.png"></div>
 				<h3>John Smith</h3>
 				<p class="city">Manchester</p>
-				<div class="a"><p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet consequat. Praesent nec malesuada nibh.<br><br> Nullam et metus congue, auctor augue sit amet, consectetur tortor.</p>
+				<div class="a"><p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet consequat. Praesent nec malesuada nibh.<br><br> Nullam et metus congue, auctor augue sit amet, consectetur tortor.</p><br>
 				<p class="read"><a href="">Read More</a><span><img src=""></span></p></div>
 			</div>
 
@@ -181,7 +192,7 @@
 				<div class="custimg"><img src="images/c3.png"></div>
 				<h3>Lars Johnson</h3>
 				<p class="city">Manchester</p>
-				<div class="a"><p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet consequat. Praesent nec malesuada nibh.<br><br> Nullam et metus congue, auctor augue sit amet, consectetur tortor.</p>
+				<div class="a"><p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet consequat. Praesent nec malesuada nibh.<br><br> Nullam et metus congue, auctor augue sit amet, consectetur tortor.</p><br>
 				<p class="read"><a href="">Read More</a><span><img src=""></span></p></div>
 			</div>
 		</div>
@@ -232,6 +243,5 @@
     	</div>
     	</div>
     </footer>
-    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
